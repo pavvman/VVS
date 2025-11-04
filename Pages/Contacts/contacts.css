@@ -1,0 +1,286 @@
+:root {
+  font-family:HelveticaNeue, sans-serif;
+  
+}
+
+@font-face{
+  font-family: "HelveticaNeue";
+  src: './globalfonts//HelveticaNeue-Bold.otf';
+}
+
+
+a{
+    text-decoration: none;
+}
+
+.contacts_container {
+    max-width: 1455px;
+    background-color: #000000;
+    padding: 0px 33px 0px 33px;
+    
+}
+.contacts{
+    background-color: #000000;
+}
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+
+/*ESS-Header*/
+
+
+.contacts_header {
+    width: 100%;
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    left:0;
+    
+}
+
+
+
+.contacts_header_row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    text-align: center;
+    margin-left: 3px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+}
+
+
+
+.contacts_header_logo,.contacts_header_logo_a{
+    font-size: 23px;
+    font-weight:400;
+      line-height:0.3%;
+    transition: all 0.4s ease-in;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+     
+
+}
+
+.contacts_header_menu {
+  
+    line-height: 0.3%;
+    cursor: pointer;
+}
+
+.contacts_ul_a{
+    display: flex;
+    margin-left: 390px;
+    gap:13px;
+    text-decoration: none;
+    list-style-type: none;
+    cursor:pointer;
+     color: #ffffff;
+}
+
+
+.contacts_li_a{
+    font-weight: 400;
+    line-height: 0.3%;
+    transition: all 0.5s ease;
+    color:rgb(255, 255, 255);
+
+}
+
+
+.contacts_a1{
+     transition: all 0.3s ease-in;
+     font-size: 22px;
+     cursor: pointer;
+     font-weight:400;
+     position: relative;
+     color: #ffffff;
+
+}
+
+
+.contacts_a1:after {
+	content: "";
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: -3px;
+    width: 0;
+    padding-top: -2px;
+    height: 1.5px; 
+    background-color: rgb(255, 255, 255); 
+    transition: width 0.6s ; 
+}
+
+.contacts_a1:hover:after {
+	content: "";
+    width: 100%;
+    display: block;
+    position: absolute;
+    left: 0;
+     padding-top: -2px;
+    bottom: -3px;
+    height: 1.5px; 
+    background-color: rgb(255, 255, 255); 
+    transition: width 0.6s;  
+}
+    
+
+
+
+/*header-button*/
+
+
+.contacts_a_header_button{
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 0.3%;
+    transition: all 0.5s ease;
+    color:rgb(255, 255, 255);
+    cursor: pointer;
+    
+}
+
+.contacts_a_header_button:hover{
+    color: rgba(188, 188, 188, 0.865);
+}
+
+
+
+
+
+/*ESS-Main*/
+
+
+.img{
+    width: 1440px;
+    height: 800px;
+}
+
+.inner_contacts{
+    margin-top: -90px;
+    width: 100%;
+}
+
+
+
+
+
+.contacts_h1{
+    padding-top: 100px;
+    font-size: 110px;
+    font-weight: 700;
+    color: #ffffff;
+    transition: filter 0.4s ease-in;
+    cursor: pointer;
+    filter: blur(0px);
+    margin-left: -9px;
+  
+}
+
+.contacts_h1:hover{
+    filter: blur(9px);
+}
+
+.contacts_h3{
+    font-size: 25px;
+    gap: 20px;
+    font-weight: 300;
+    color: #ffffff;
+    border-bottom: 2px solid #ffffffe9 ;
+
+}
+
+.contacts_a{
+    color: #ffffff;
+    cursor:pointer;
+    padding: 1px;
+    transition: all 0.2s ease-in;
+}
+.contacts_a:hover{
+     background-color: rgb(246, 246, 246);
+    color: #0703f0;
+}
+
+
+
+
+
+.span_mail{
+    transition: all 0.2s ease-in;
+    cursor: pointer;
+}
+
+
+.c_Href_logo{
+    justify-content:end;
+    text-align: center;
+    height: 15px;
+    width: 15px;
+ 
+    pointer-events: none;
+}
+
+
+/*ESS-Footer*/
+
+
+
+
+.contacts_footer{
+  margin: 0;
+  margin-top: 33px;
+  
+  
+}
+
+.contacts_footer_gen{
+
+  padding-top: 95px;
+}
+
+.contacts_fwr{
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;      
+  
+}
+
+.contacts_footer_p{
+  color: #ffffffe1;
+  cursor: pointer;
+  font-size: 15px;
+  padding-top: 15px;
+  font-weight: 400;
+  transition: all 0.3s ease-in;
+}
+
+.contacts_footer_p:hover{
+    color: rgba(164, 164, 164, 0.895);
+}
+
+.contacts_footer_svg{
+    margin-top: 18px;
+  pointer-events: none;
+  width: 170px;
+  height: 70px;
+}
+
+
+
+
+
+
+
+::selection {
+   background-color: rgb(246, 246, 246);
+    color: #0703f0;
+}

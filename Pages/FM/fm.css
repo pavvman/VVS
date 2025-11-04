@@ -1,0 +1,327 @@
+:root {
+  font-family:HelveticaNeue, sans-serif;
+  
+}
+
+@font-face{
+  font-family: "HelveticaNeue";
+  src: './globalfonts//HelveticaNeue-Bold.otf';
+}
+
+
+a{
+    text-decoration: none;
+    
+}
+
+.container {
+    max-width: 1455px;
+    background-color: hsl(0, 1%, 85%);
+    padding: 0px 33px 0px 33px;
+
+    
+}
+
+.fm_general{
+ background-color: hsl(0, 1%, 85%);
+}
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+/*Fm-Header*/
+
+
+.fm_header {
+    width: 100%;
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    left:0;
+    
+}
+
+
+
+.fm_header_row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    text-align: center;
+    margin-left: 3px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+}
+
+
+
+.fm_header_logo,.fm_header_logo_a{
+    font-size: 23px;
+    font-weight:400;
+      line-height:0.3%;
+    transition: all 0.4s ease-in;
+    cursor: pointer;
+    color: rgb(33, 33, 33);
+    text-decoration: none;
+     
+
+}
+
+.fm_logo{
+   
+     width: 190px;
+    height: 50px;
+}
+
+
+.fm_header_menu {
+  
+    line-height: 0.3%;
+    cursor: pointer;
+}
+
+.ul_a{
+    display: flex;
+    margin-left: 390px;
+    gap:13px;
+    text-decoration: none;
+    list-style-type: none;
+    cursor:pointer;
+     color: #171717;
+}
+
+
+.fm_li_a{
+    font-weight: 400;
+    line-height: 0.3%;
+    transition: all 0.5s ease;
+   
+
+}
+
+
+.fm_a1{
+     transition: all 0.3s ease-in;
+     font-size: 22px;
+     cursor: pointer;
+     font-weight:400;
+     position: relative;
+    color: rgb(33, 33, 33);
+
+}
+
+
+.fm_a1:after {
+	content: "";
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: -3px;
+    width: 0;
+    padding-top: -2px;
+    height: 1.5px; 
+    background-color: rgb(32, 32, 32); 
+    transition: width 0.6s ; 
+}
+
+.fm_a1:hover:after {
+	content: "";
+    width: 100%;
+    display: block;
+    position: absolute;
+    left: 0;
+     padding-top: -2px;
+    bottom: -3px;
+    height: 1.5px; 
+    background-color: rgb(23, 23, 23); 
+    transition: width 0.6s;  
+}
+    
+
+
+/*header-button*/
+
+.fm_a_header_button{
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 0.3%;
+    transition: all 0.5s ease;
+    color:rgb(27, 26, 26);
+    cursor: pointer;
+    
+}
+
+.fm_a_header_button:hover{
+    color: rgb(113, 113, 113);
+}
+
+
+
+/*Fm-Main*/
+
+
+.fm_img{
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 1519px;
+    margin-left: -10px;
+    height: 830px;
+    object-fit: cover;
+  
+}
+
+.fm_h1{
+     color: #141414;
+    width: 100%;
+    font-size: 200px;
+    font-weight: 700;
+    margin-top: 20px;
+
+}
+
+.fm_p{
+    margin-top: -120px;
+    color: #1c1c1c;
+    width: 50%;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 1.1;
+    letter-spacing: 0.001px;
+}
+
+
+
+.calc{
+    display: flex;
+    row-gap: 360px;
+    margin-top: 110px;
+    justify-content: space-between;
+}
+
+
+
+label {
+ font-weight: 600;
+ color: #333;
+ font-size: 14px;
+}
+
+
+input {
+ padding: 10px 7px;
+ border: 2px solid #ffffff;
+ border-radius: 7px;
+ font-size: 16px;
+ transition: all 0.3s ease;
+}
+
+
+input:focus {
+ outline: none;
+ border-color: #000000;
+ box-shadow: 0 0 0 3px rgba(0,123,255,0.1);
+}
+
+.input-group{
+    gap: 20px;
+}
+
+
+
+.result{
+    margin-left: -6px;
+    font-size: 157px;
+    font-weight: 500;
+    margin-top: 40px;
+    max-width: 90%;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    word-break: break-all;
+    letter-spacing: 0.3;
+}
+
+button {
+        color: #ffffff;
+     background-color: #0a0a0a;
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+    border:1px #171717 solid;
+    border-radius: 13px ;
+    padding:8px 13px;
+    transition: all 0.2s ease-in;
+
+}
+
+button:hover {
+    background-color: #ffffff;
+    color: #0a0a0a;
+   box-shadow: 0 10px 20px rgba(93, 93, 93, 0.18);
+}
+
+
+
+
+
+
+
+
+
+/*FM-Footer*/
+
+.fm_footer{
+  margin: 0;
+  margin-top: 0px;
+  
+  
+}
+
+.fm_footer_gen{
+    padding-top: 30px;
+}
+
+.fm_fwr{
+  text-align: center;
+  align-items: center;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: space-between;      
+  
+}
+
+.fm_footer_p{
+  color: #131313ba;
+  cursor: pointer;
+  font-size: 15px;
+  padding-top: 15px;
+  font-weight: 400;
+    transition: all 0.3s ease-in;
+ 
+}
+
+.fm_footer_p:hover{
+    color: rgba(78, 78, 78, 0.895);
+}
+
+
+
+.fm_footer_svg{
+  margin-top: 18px;
+  pointer-events: none;
+  width: 170px;
+  height: 70px;
+
+}
+
+
+
+
+
+::selection {
+   background-color: rgb(17, 17, 17);
+    color:#ffffff;
+}

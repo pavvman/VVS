@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="svg/svg" href="/img/icons/Lockup_Vol_2-228 2.svg">
+    <link rel="stylesheet" href="./game.css">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll/dist/locomotive-scroll.css">
+    <title>Игра | Pavvman</title>
+</head>
+<body>
+
+    <header>
+    <div class="game_header"> 
+      
+      <div class="game_container">
+
+          <div class="game_header_row">
+
+
+            <div class="game_header_logo">
+
+              <a href="/index.html" class="game_header_logo_a" >Pavvman<span class="game_span">®</span></a>
+
+                <!-- <a class="header_logo_a" href="index.html" ><img class='logo' src="./img/icons/logotype.svg"/></a> -->
+            </div>
+
+            <div class="game_header_search">
+              
+                <div class="game_search_inner">
+
+                      <ul class="game_ul_a">
+                            <li class="game_li_a"><a href="/Pages/ESE/ese.html" class="game_a1">Эссе</a></li>        
+                            <li class="game_li_a"><a href="/Pages/FM/fm.html" class="game_a1">Формула</a></li>     
+                            <li class="game_li_a"><a href="/Pages/GAME/game.html" class="game_a1">Игра</a></li>     
+                            <li class="game_li_a"><a href="/Pages/MAP/map.html" class="game_a1" >Карта</a></li>              
+                      </ul>
+                </div>
+
+            </div>
+
+            <div class="game_header_button"><a  class="game_a_header_button" href='/Pages/Contacts/contacts.html' >Контакты</a></div>
+          
+
+          </div>
+        </div></div>
+
+       
+      </header>
+
+    <main class="game_container">
+
+
+        <div class="game_text">
+            <h1 class="dino_h1">#DINO GAME🦖</h1>
+            <div class="states">
+                <div id="score" class="score"> Счет :0</div>
+             <div id="record" class="score"> Рекорд :0</div>
+            </div>     
+        </div>
+
+        
+        <div class="game"> 
+            <div id="dino"></div>
+            <div id="cactus"></div>
+        </div>
+
+
+        <div class="game_button_gen">
+            <button id="startBtn" class="game_button">Начать игру</button>
+        </div>
+
+
+        <div id="gameOverWindow" class="game-over-hidden">
+
+          <div class="game-over-content">
+            
+            <div class="inner-text">
+                    <h2> Игра Окончена:(</h2>
+            <p>🦖Счет: <span id="finalScore">0</span></p>
+            <p>🏆Лучший рекорд: <span id="bestRecordText">0</span></p>
+
+            <button id="restartBtn">🔄Играть снова</button>
+
+            <div class="save-buttons">
+              <button id="saveImageBtn">🖼️Сохранить результат</button>
+            </div>
+            </div>
+            
+          </div>
+
+        </div>
+
+        
+        
+    </main>
+
+    <script src="./game.js"></script>
+    
+</body>
+</html>
