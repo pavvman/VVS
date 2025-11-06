@@ -120,13 +120,13 @@ startBtn.onclick = startGame;
 
 
 saveImageBtn.onclick = function() {
-  // Создаем canvas для картинки
+  // Создаем область для картинки
   const canvas = document.createElement("canvas");
   const ctx = canvas.getContext("2d");
   canvas.width = 400;
   canvas.height = 280;
   
-  // Рисуем результат
+  // результат
   ctx.fillStyle = "#1500ffff";
   ctx.fillRect(0, 0, canvas.width, canvas.height);
   
@@ -146,6 +146,6 @@ saveImageBtn.onclick = function() {
   // Создаем ссылку для скачивания
   const link = document.createElement("a");
   link.download = `result/official-pavvman-game.png`;
-  link.href = canvas.toDataURL();
+  link.href = canvas.toDataURL("image/png",1.0);
   link.click();
 };

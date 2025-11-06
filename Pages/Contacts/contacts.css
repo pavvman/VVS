@@ -160,8 +160,17 @@ html{
 
 
 .img{
-    width: 1440px;
-    height: 800px;
+   
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin-top: 40px;
+    max-width: 100%;   
+    height: auto;       
+    display: block;
+   
 }
 
 .inner_contacts{

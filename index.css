@@ -163,9 +163,8 @@ html{
 /*Main*/
 
 .gen{
-    max-width: 1450px;
-    height: 730px;
-    top: 30px;
+    max-width: 1455px;
+    height: 450px;
  
 }
 
@@ -173,11 +172,18 @@ html{
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
-    height: 800px;
+    height: auto;
     object-fit: cover;
-    margin-top: 0px;
+    margin-top: -70px;
+    max-width: 100%;   
+    height: auto;       
+    display: block;
 }
 
+.h1_general{
+    font-size: 40px;
+    font-weight: 800;
+}
 
 .p_general{
     color: #000000;
@@ -232,9 +238,6 @@ html{
     transition: all 0.2s ease-in;
 }
 
-.main_button_a:active {
- transform: translateY(0);
-}
 
 .main_button_a:hover{
     background-color: rgb(255, 255, 255);
@@ -288,57 +291,17 @@ html{
 
 }
 
-/*img*/
 
-.img-container{
-    gap:20px;
-    display: block;
-    display: flex;
-
-}
 
 .main_footer_img{
-    display: block;
-    position: absolute;
     background-size: cover;
     background-repeat: no-repeat;
-    max-width: 100%;
-    height: 900px;
     object-fit: cover;
-    margin-top: -390px;
-    margin-left: -8px;
-}
-
-.main_footer_img2{
+    max-width: 101%;   
+    height: auto;       
     display: block;
-    position: absolute;
-    background-size: cover;
-    background-repeat: no-repeat;
-    max-width: 100%;
-    height: 900px;
-    object-fit: cover;
-     margin-top: 390px;
-    margin-left: -8px;
+    margin-left: -9px;
 }
-
-.main_footer_img3{
-    display: block;
-     position: absolute;
-    background-size: cover;
-    background-repeat: no-repeat;
-    max-width: 100%;
-    height: 210px;
-    object-fit: cover;
-    margin-left: -8px;
-     margin-top: 1200px; 
-}
-
-.cont-img{
-
-    display: flex;
-
-}
-
 
 
 
@@ -349,7 +312,7 @@ html{
 
 .footer{
   margin: 0;
-  margin-top: 1400px; 
+  margin-top: 90px; 
 }
 
 .footer_gen{
@@ -385,6 +348,358 @@ html{
 }
 
 ::selection {
-   background-color: rgb(0, 64, 255);
-    color: #2bffb1f6;
+   background-color: rgb(10, 10, 10);
+    color: #fffffff6;
 }
+
+
+
+
+
+/*медийка*/
+
+
+@media(max-width:1449px) {
+    
+    .main_footer_img{
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 800px;
+    object-fit: cover;
+    margin-top: 0px;
+    max-width: 100%;   
+    height: auto;       
+    display: block;
+   }
+}
+
+@media(max-width:1100px) {
+
+     .main_footer_img{
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 800px;
+    object-fit: cover;
+    margin-top: 30px;
+    max-width: 100%;   
+    height: auto;       
+    display: block;
+   }
+
+}
+
+
+@media(max-width:870px) {
+
+     .main_footer_img{
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 800px;
+    object-fit: cover;
+    margin-top: 70px;
+    max-width: 100%;   
+    height: auto;       
+    display: block;
+   }
+
+}
+
+
+@media(max-width:800px) {
+
+     .main_footer_img{
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 800px;
+    object-fit: cover;
+    margin-top: 160px;
+    max-width: 100%;   
+    height: auto;       
+    display: block;
+   }
+
+}
+
+
+@media(max-width:640px) {
+
+     .main_footer_img{
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 800px;
+    object-fit: cover;
+    margin-top: 130px;
+    max-width: 100%;   
+    height: auto;       
+    display: block;
+   }
+
+   .img{
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin-top: 40px;
+    max-width: 100%;   
+    height: auto;       
+    display: block;
+   }
+    .p_general{
+    color: #000000;
+    width: 100%;
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 40px;
+    line-height: 1.2;
+    letter-spacing: 0.001px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+    .main_button_a{
+    color: #ffffff;
+     background-color: #0a0a0a;
+    font-size: 12px;
+    text-align: center;
+    text-decoration: none;
+    border:1px #171717 solid;
+    border-radius: 13px ;
+    padding:8px 13px;
+    transition: all 0.2s ease-in;
+}
+    .span-main-button{
+    background-color: #ffffff;
+    color: #0f0f0f;
+    padding: 3px 5px;
+    border-radius: 6px;
+    font-size:10px;
+    transition: all 0.2s ease-in;
+}
+    .main_button_a{
+     width: 190px;
+     padding-left: 3px;
+     font-size: 11px;
+     transition: all 0.4s ease-in;
+     cursor: pointer;
+   
+}
+     .header_logo,.header_logo_a{
+    font-size: 19px;
+    font-weight:400;
+      line-height:0.3%;
+    transition: all 0.4s ease-in;
+    cursor: pointer;
+    color: rgb(14, 13, 13);
+    text-decoration: none;
+     
+
+}
+
+
+}
+
+
+@media(max-width:490px) {
+
+     .main_footer_img{
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 800px;
+    object-fit: cover;
+    margin-top: 130px;
+    max-width: 100%;   
+    height: auto;       
+    display: block;
+   }
+
+   .img{
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin-top: 40px;
+    max-width: 100%;   
+    height: auto;       
+    display: block;
+   }
+    .p_general{
+    color: #000000;
+    width: 100%;
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 40px;
+    line-height: 1.2;
+    letter-spacing: 0.001px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+    .main_button_a{
+    color: #ffffff;
+     background-color: #0a0a0a;
+    font-size: 12px;
+    text-align: center;
+    text-decoration: none;
+    border:1px #171717 solid;
+    border-radius: 13px ;
+    padding:8px 13px;
+    transition: all 0.2s ease-in;
+}
+    .span-main-button{
+    background-color: #ffffff;
+    color: #0f0f0f;
+    padding: 3px 5px;
+    border-radius: 6px;
+    font-size:10px;
+    transition: all 0.2s ease-in;
+}
+    .main_button_a{
+     width: 10px;
+     padding-left: 34px;
+     font-size: 15px;
+     transition: all 0.4s ease-in;
+     cursor: pointer;
+   
+}
+    
+    .footer_p{
+      color: #121212e1;
+      cursor: pointer;
+      font-size: 11px;
+      padding-top: 15px;
+      font-weight: 400;
+      transition: all 0.6s ease-in;
+}
+
+    .footer_svg{
+      margin-top: 18px;
+      pointer-events: none;
+      width: 120px;
+      height: 40px;
+}
+
+     .header_logo,.header_logo_a{
+    font-size: 18px;
+    font-weight:400;
+      line-height:0.3%;
+    transition: all 0.4s ease-in;
+    cursor: pointer;
+    color: rgb(14, 13, 13);
+    text-decoration: none;
+     
+
+}
+
+}
+
+
+@media(max-width:400px) {
+
+     .main_footer_img{
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 800px;
+    object-fit: cover;
+    margin-top: 250px;
+    max-width: 100%;   
+    height: auto;       
+    display: block;
+   }
+
+   .img{
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin-top: 40px;
+    max-width: 100%;   
+    height: auto;       
+    display: block;
+   }
+    .p_general{
+    color: #000000;
+    width: 100%;
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 40px;
+    line-height: 1.2;
+    letter-spacing: 0.001px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+    .main_button_a{
+    color: #ffffff;
+     background-color: #0a0a0a;
+    font-size: 11px;
+    text-align: center;
+    text-decoration: none;
+    border:1px #171717 solid;
+    border-radius: 13px ;
+    padding:8px 7px;
+    transition: all 0.2s ease-in;
+}
+    .span-main-button{
+    background-color: #ffffff;
+    color: #0f0f0f;
+    padding: 3px 5px;
+    border-radius: 6px;
+    font-size:10px;
+    transition: all 0.2s ease-in;
+}
+    .main_button_a{
+     width: 100px;
+     padding-left: 34px;
+     font-size: 10px;
+     transition: all 0.4s ease-in;
+     cursor: pointer;
+   
+}
+    
+    .footer_p{
+      color: #121212e1;
+      cursor: pointer;
+      font-size: 9px;
+      padding-top: 15px;
+      font-weight: 400;
+      transition: all 0.6s ease-in;
+}
+
+    .footer_svg{
+      margin-top: 18px;
+      pointer-events: none;
+      width: 120px;
+      height: 40px;
+}
+    .Href_logo{
+    justify-content: space-between;
+    text-align: center;
+    height: 7px;
+    width: 7px;
+    padding-right: 8px;
+    pointer-events: none;
+
+}
+    .header_logo,.header_logo_a{
+    font-size: 17px;
+    font-weight:400;
+      line-height:0.3%;
+    transition: all 0.4s ease-in;
+    cursor: pointer;
+    color: rgb(14, 13, 13);
+    text-decoration: none;
+     
+
+}
+
+}
+
+
+
