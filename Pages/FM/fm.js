@@ -17,6 +17,6 @@ function calculate() {
             
     document.getElementById('result').innerHTML = 
 
-        `F = ${energy} ЕД<br>`;
+        `F = ${energy}<br>`;
 
 }

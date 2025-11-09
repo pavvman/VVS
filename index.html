@@ -24,36 +24,48 @@
     <div class="header"> 
       
       <div class="container">
-
           <div class="header_row">
 
 
             <div class="header_logo">
-
               <a href="index.html" class="header_logo_a" >Pavvman<span class="span">®</span></a>
-
-          
             </div>
 
             <div class="header_search">
-              
                 <div class="search_inner">
-
-                      <ul class="ul_a">
-                            <li class="li_a"><a href="./Pages/ESE/testburgr.html" class="a1">Эссе</a></li>        
-                            <li class="li_a"><a href="./Pages/FM/fm.html" class="a1">Формула</a></li>     
-                            <li class="li_a"><a href="./Pages/GAME/game.html" class="a1">Игра</a></li>     
-                            <li class="li_a"><a href="./Pages/MAP/map.html" class="a1" >Карта</a></li>              
-                      </ul>
+                      <nav class="ul_a">
+                            <a href="./Pages/ESE/ese.html" class="a1">Эссе</a>       
+                            <a href="./Pages/FM/fm.html" class="a1">Формула</a>     
+                            <a href="./Pages/GAME/game.html" class="a1">Игра</a>     
+                            <a href="./Pages/MAP/map.html" class="a1" >Карта</a>        
+                      </nav>
                 </div>
 
             </div>
 
             <div class="header_button"><a  class="a_header_button" href='./Pages/Contacts/contacts.html'>Контакты</a></div>
           
-
+              <button class="menu-toggle" id="menuToggle">
+                  <span class="menu-text">Menu</span>
+                  <span class="close-text">Close</span>
+              </button>
           </div>
-        </div></div>
+
+        </div> 
+        
+    <nav class="mobile-menu" id="mobileMenu">
+        <div class="menu__overlay">
+            <div class="menu__content">
+                 
+                            <a href="./Pages/ESE/ese.html" class="a1_menu_active">Эссе</a>       
+                            <a href="./Pages/FM/fm.html" class="a1_menu_active">Формула</a>     
+                            <a href="./Pages/GAME/game.html" class="a1_menu_active">Игра</a>     
+                            <a href="./Pages/MAP/map.html" class="a1_menu_active" >Карта</a>        
+                     
+            </div>
+        </div>
+    </nav>
+  </div>
 
        
       </header>
@@ -132,6 +144,7 @@
     </footer> 
 
     
+    <script src="./burgerMenu.js"></script>
 
 
  

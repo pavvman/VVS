@@ -27,6 +27,12 @@ html{
 }
 
 
+
+
+
+
+
+
 /*header*/
 
 
@@ -81,6 +87,8 @@ html{
 
 .ul_a{
     display: flex;
+	padding-top: 5px;
+	padding-bottom: 5px;
     margin-left: 390px;
     gap:13px;
     text-decoration: none;
@@ -135,8 +143,6 @@ html{
     background-color: rgb(11, 11, 11); 
     transition: width 0.6s;  
 }
-    
-
 
 
 /*header-button*/
@@ -155,6 +161,10 @@ html{
 .a_header_button:hover{
     color: rgb(85, 85, 85);
 }
+
+
+
+
 
 
 
@@ -305,8 +315,11 @@ html{
 
 
 
-/*Footer*/
 
+
+
+
+/*Footer*/
 
 
 
@@ -356,7 +369,165 @@ html{
 
 
 
-/*медийка*/
+
+
+
+/*Бургер-меню*/
+
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 22px;
+    font-weight: 400;
+    color: #000;
+    padding: 8px 12px;
+    z-index: 1000;
+    position: relative;
+}
+
+.close-text {
+    display: none;
+}
+
+
+
+
+
+
+
+
+/* Меню */
+
+
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: #000000;
+    z-index: 999;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.4s ease;
+    clip-path: circle(0% at calc(100% - 40px) 40px);
+}
+
+.menu__overlay {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding: 80px 40px;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.menu__content {
+    text-align: left;
+}
+
+.a1_menu_active{
+    display: block;
+    font-size: 1.75rem;
+    font-weight: 400;
+    color: #ffeeee;
+    text-decoration: none;
+    margin: 1rem 0;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.4s ease;
+}
+
+.a1_menu_active:hover {
+    color: #666;
+}
+
+/* Активное состояние */
+.mobile-menu.active {
+    opacity: 1;
+    visibility: visible;
+    clip-path: circle(150% at calc(100% - 40px) 40px);
+}
+
+.mobile-menu.active .a1_menu_active{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.mobile-menu.active .a1_menu_active:nth-child(1) { transition-delay: 0.1s; }
+.mobile-menu.active .a1_menu_active:nth-child(2) { transition-delay: 0.15s; }
+.mobile-menu.active .a1_menu_active:nth-child(3) { transition-delay: 0.2s; }
+.mobile-menu.active .a1_menu_active:nth-child(4) { transition-delay: 0.25s; }
+.mobile-menu.active .a1_menu_active:nth-child(5) { transition-delay: 0.3s; }
+
+/* ИСПРАВЛЕННЫЙ СЕЛЕКТОР - меняем текст кнопки через JS */
+.menu-toggle.active .menu-text {
+    display: none;
+}
+
+.menu-toggle.active .close-text {
+    display: inline;
+	color: #ffeeee;
+}
+
+/* Показываем кнопку только на мобильных */
+@media (max-width: 1100px) {
+    .menu-toggle {
+        display: block;
+    }
+    
+    .header_search {
+        display: none;
+    }
+
+	.header_button{
+		display: none;
+	}
+}
+
+/* Адаптация для маленьких экранов */
+@media (max-width: 480px) {
+    .a1_menu_active {
+        font-size: 1.25rem;
+        margin: 0.75rem 0;
+    }
+    
+    .menu-toggle {
+        font-size: 14px;
+        padding: 6px 10px;
+    }
+    
+    .menu__overlay {
+        padding: 60px 20px;
+    }
+}
+
+/* Стили для демонстрации */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 20px;
+    border-bottom: 1px solid #eee;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*медиа-запросы*/
+
 
 
 @media(max-width:1449px) {
@@ -464,7 +635,7 @@ html{
     .main_button_a{
     color: #ffffff;
      background-color: #0a0a0a;
-    font-size: 12px;
+    font-size: 15px;
     text-align: center;
     text-decoration: none;
     border:1px #171717 solid;
@@ -477,12 +648,12 @@ html{
     color: #0f0f0f;
     padding: 3px 5px;
     border-radius: 6px;
-    font-size:10px;
+    font-size:11px;
     transition: all 0.2s ease-in;
 }
     .main_button_a{
      width: 190px;
-     padding-left: 3px;
+     padding-left: 12px;
      font-size: 11px;
      transition: all 0.4s ease-in;
      cursor: pointer;
@@ -512,7 +683,7 @@ html{
     width: 100%;
     height: 800px;
     object-fit: cover;
-    margin-top: 130px;
+    margin-top: 190px;
     max-width: 100%;   
     height: auto;       
     display: block;
@@ -524,7 +695,7 @@ html{
     width: 100%;
     height: auto;
     object-fit: cover;
-    margin-top: 40px;
+    margin-top: 50px;
     max-width: 100%;   
     height: auto;       
     display: block;
@@ -554,19 +725,26 @@ html{
     .span-main-button{
     background-color: #ffffff;
     color: #0f0f0f;
-    padding: 3px 5px;
+    padding: 3px 3px;
     border-radius: 6px;
     font-size:10px;
     transition: all 0.2s ease-in;
 }
-    .main_button_a{
-     width: 10px;
-     padding-left: 34px;
-     font-size: 15px;
+      .main_button_a{
+     width: 130px;
+     padding-left: 12px;
+     font-size: 11px;
      transition: all 0.4s ease-in;
      cursor: pointer;
+     width: fit-content; /* Под содержание */
+     padding: 12px 15px;
+     font-size: clamp(14px, 2vw, 18px); /* Адаптивный размер текста */
+     white-space: nowrap; 
    
 }
+    .button{
+        font-size: 16px;
+    }
     
     .footer_p{
       color: #121212e1;
@@ -637,14 +815,18 @@ html{
 }
     .main_button_a{
     color: #ffffff;
-     background-color: #0a0a0a;
-    font-size: 11px;
+     background-color: #000000;
+    font-size: 7px;
     text-align: center;
     text-decoration: none;
     border:1px #171717 solid;
     border-radius: 13px ;
-    padding:8px 7px;
     transition: all 0.2s ease-in;
+    width: fit-content; /* Под содержание */
+    padding: 12px 15px;
+    font-size: clamp(14px, 2vw, 18px); /* Адаптивный размер текста */
+    white-space: nowrap; 
+    cursor: pointer;
 }
     .span-main-button{
     background-color: #ffffff;
@@ -654,13 +836,31 @@ html{
     font-size:10px;
     transition: all 0.2s ease-in;
 }
-    .main_button_a{
-     width: 100px;
+
+    .main_button{
+     width: 110px;
      padding-left: 34px;
-     font-size: 10px;
+     font-size: 23px;
      transition: all 0.4s ease-in;
      cursor: pointer;
    
+}
+    .button{
+        font-size: 18px;
+    }
+    
+.Href_logo{
+    justify-content: space-between;
+    text-align: center;
+    height: 9px;
+    width: 9px;
+    pointer-events: none;
+    cursor: pointer;
+    vertical-align: top;
+    display: none;
+
+
+
 }
     
     .footer_p{
