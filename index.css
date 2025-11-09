@@ -512,19 +512,52 @@ html{
 
 
 @media (max-width: 480px) {
-    .a1_menu_active {
-        font-size: 1.25rem;
-        margin: 0.75rem 0;
+    /* .a1_menu_active {
+        font-size: 30px;
+        margin: 10px 0;
     }
     
     .menu-toggle {
-        font-size: 14px;
+        font-size: 18px;
         padding: 6px 10px;
     }
     
     .menu__overlay {
         padding: 60px 20px;
+    } */
+
+	.a1_menu_active{
+    display: block;
+    font-size: 39px;
+    font-weight: 400;
+    color: #ffeeee;
+    text-decoration: none;
+    margin: 15px 0;
+    opacity: 0;
+    /* transform: translateY(20px); */
+    transition: all 0.4s ease;
+   }
+	.a1_menu_active:hover {
+    color: #666;
     }
+	.footer_gen_menu_active{
+	padding-top: 163px;
+	}
+
+	.footer_p_menu_active{
+	font-size: 16px;
+	color: #eee;
+	padding-top: 13px;
+	margin-left: 50px;
+	transition: all 0.3s ease-in;
+	cursor: pointer;
+	}
+	
+	.footer_p_menu_active:hover{
+	background-color: #070fff;
+    }
+
+
 }
 
 /* Стили для демонстрации */
