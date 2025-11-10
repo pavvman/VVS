@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="svg/svg" href="/img/icons/Lockup_Vol_2-228 2.svg">
     <link rel="stylesheet" href="./ese.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll/dist/locomotive-scroll.css" />
+    <link rel="stylesheet" href="/burgerMenu.css">
+
     <title>Эссе | Pavvman</title>
 </head>
 <body>
@@ -23,24 +24,53 @@
         
             </div>
 
-            <div class="es_header_search">
-              
-                <div class="es_search_inner">
-                      <ul class="es_ul_a">
-                            <li class="es_li_a"><a class="es_a1" href='/Pages/ESE/ese.html'>Эссе</a></li>        
-                            <li class="es_li_a"><a class="es_a1" href='/Pages/FM/fm.html'>Формула</a></li>     
-                            <li class="es_li_a"><a class="es_a1" href='/Pages/GAME/game.html'>Игра</a></li>     
-                            <li class="es_li_a"><a class="es_a1" href="/Pages/MAP/map.html" >Карта</a></li>              
-                      </ul>
+        <div class="header_search">
+                <div class="search_inner">
+                      <nav class="ul_a">
+                            <a href="/Pages/ESE/ese.html" class="a1">Эссе</a>       
+                            <a href="/Pages/FM/fm.html" class="a1">Формула</a>     
+                            <a href="/Pages/GAME/game.html" class="a1">Игра</a>     
+                            <a href="/Pages/MAP/map.html" class="a1" >Карта</a>        
+                      </nav>
                 </div>
 
             </div>
 
-            <div class><a class="es_header_button" href='/Pages/Contacts/contacts.html'>Контакты</a></div>
+            <div class="header_button"><a  class="a_header_button" href='./Pages/Contacts/contacts.html'>Контакты</a></div>
           
-
+              <button class="menu-toggle" id="menuT">
+                  <span class="es_menu-text">Меню</span>
+                  <span class="close-text">*Закрыть</span>
+              </button>
           </div>
+
+        </div> 
+        
+    <nav class="mobile-menu" id="mobileMenu">
+        <div class="menu_overlay">
+            <div class="menu_content">
+
+                 
+                            <a href="/Pages/ESE/ese.html" class="a1_menu_active">~Эссе</a>       
+                            <a href="/Pages/FM/fm.html" class="a1_menu_active">$Формула</a>     
+                            <a href="/Pages/GAME/game.html" class="a1_menu_active">#Игра</a>     
+                            <a href="/Pages/MAP/map.html" class="a1_menu_active">&Карта</a>
+                            <a href="/Pages/Contacts/contacts.html" class="a1_menu_active" >@Контакты</a>
+                            
+                            <div class='footer_gen_menu_active'>
+
+                            <div class='fwr'>
+                                        <div><img class='footer_svg_menu' src="/img/icons/logotype.svg"/></div>
+                                         <!-- <p class='footer_p_menu_active'><br/>©2025 All Rights Reserved </p> -->
+                            </div>
+                                
+                        </div>  
+                     
+            </div>
         </div>
+    </nav>
+  </div>
+
       </header>
 
      <main class="scroll-container"> 
@@ -218,7 +248,6 @@
             </main>
     </footer> 
      
-     <script src="/scroll.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll/dist/locomotive-scroll.min.js"></script>
+     <script src="/burgerMenu.js"></script>
 </body>
 </html>

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <link rel="icon" type="svg/svg" href="/img/icons/Lockup_Vol_2-228 2.svg">
      <link rel="stylesheet" href="./map.css">
+     <link rel="stylesheet" href="/burgerMenu.css">
     <title>Карта | Pavvman</title>
 </head>
 <body>
@@ -21,29 +22,57 @@
         
             </div>
 
-            <div class="map_header_search">
-              
+                    <div class="map_header_search">
                 <div class="map_search_inner">
-                      <ul class="map_ul_a">  
-                            <li class="map_li_a"><a href="/Pages/ESE/ese.html" class="map_a1">Эссе</a></li>        
-                            <li class="map_li_a"><a href="/Pages/FM/fm.html" class="map_a1">Формула</a></li>     
-                            <li class="map_li_a"><a href="/Pages/GAME/game.html" class="map_a1">Игра</a></li>     
-                            <li class="map_li_a"><a href="/Pages/MAP/map.html" class="map_a1" >Карта</a></li>                        
-                      </ul>
+                      <nav class="map_ul_a">
+                            <a href="/Pages/ESE/ese.html" class="map_a1">Эссе</a>       
+                            <a href="/Pages/FM/fm.html" class="map_a1">Формула</a>     
+                            <a href="/Pages/GAME/game.html" class="map_a1">Игра</a>     
+                            <a href="/Pages/MAP/map.html" class="map_a1" >Карта</a>        
+                      </nav>
                 </div>
 
             </div>
 
-            <div class><a class="map_header_button" href='/Pages/Contacts/contacts.html'>Контакты</a></div>
+            <div class="map_header_button"><a  class="map_a_header_button" href='/Pages/Contacts/contacts.html'>Контакты</a></div>
           
-
-
+              <button class="menu-toggle" id="menuT">
+                  <span class="menu-text">Меню</span>
+                  <span class="close-text">*Закрыть</span>
+              </button>
           </div>
+
+        </div> 
+        
+    <nav class="mobile-menu" id="mobileMenu">
+        <div class="menu_overlay">
+            <div class="menu_content">
+
+                 
+                            <a href="/Pages/ESE/ese.html" class="a1_menu_active">~Эссе</a>       
+                            <a href="/Pages/FM/fm.html" class="a1_menu_active">$Формула</a>     
+                            <a href="/Pages/GAME/game.html" class="a1_menu_active">#Игра</a>     
+                            <a href="/Pages/MAP/map.html" class="a1_menu_active">&Карта</a>
+                            <a href="/Pages/Contacts/contacts.html" class="a1_menu_active" >@Контакты</a>
+                            
+                            <div class='footer_gen_menu_active'>
+
+                            <div class='fwr'>
+                                        <div><img class='footer_svg_menu' src="/img/icons/logotype.svg"/></div>
+                                         <!-- <p class='footer_p_menu_active'><br/>©2025 All Rights Reserved </p> -->
+                            </div>
+                                
+                        </div>  
+                     
+            </div>
         </div>
+    </nav>
+  </div>
       </header>
       <div id="map" class="map"></div>
       <script src="https://api-maps.yandex.ru/2.1/?apikey=fbb923bf-b5ea-4132-9110-b58701c7749b&lang=ru_RU"></script>
       <script src="./map.js"></script>
+      <script src="/burgerMenu.js"></script>
     
 </body>
 </html>
