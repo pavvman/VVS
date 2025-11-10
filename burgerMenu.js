@@ -1,43 +1,30 @@
+document.addEventListener('DOMContentLoaded', function() {
+    const menuT = document.getElementById('menuT');
+    const mobileMenu = document.getElementById('mobileMenu');
+    
 
-class MobileMenu {
-    constructor() {
-        this.menuToggle = document.getElementById('menuToggle');
-        this.mobileMenu = document.getElementById('mobileMenu');
-        this.isOpen = false;
-                
-        this.init();
-    }
-            
-     init() {
-        this.menuToggle.addEventListener('click', () => this.toggle());
-                
-                // Закрытие по клику на ссылку
-        const menuLinks = this.mobileMenu.querySelectorAll('.a1_menu_active');
-         menuLinks.forEach(link => {
-            link.addEventListener('click', () => this.close());
+    menuT.addEventListener('click', function() {
+
+        const isOpen = mobileMenu.classList.contains('active');
+        
+        if (!isOpen) {
+            mobileMenu.classList.add('active');
+            menuT.classList.add('active');
+            document.body.style.overflow = 'hidden'; //блокировка прокуртки
+        } else {
+            mobileMenu.classList.remove('active');
+            menuT.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+    });
+    
+  
+    document.querySelectorAll('#mobileMenu .a1_menu_active').forEach(function(link) {
+        
+        link.addEventListener('click', function() {
+            mobileMenu.classList.remove('active');
+            menuT.classList.remove('active');
+            document.body.style.overflow = '';
         });
-    }
-            
-    toggle() {
-        this.isOpen ? this.close() : this.open();
-    }
-            
-    open() {
-        this.mobileMenu.classList.add('active');
-        this.menuToggle.classList.add('active'); // ДОБАВЛЕНО
-        document.body.style.overflow = 'hidden';
-        this.isOpen = true;
-    }
-            
-    close() {
-        this.mobileMenu.classList.remove('active');
-        this.menuToggle.classList.remove('active'); // ДОБАВЛЕНО
-        document.body.style.overflow = '';
-        this.isOpen = false;
-    }
-}
-
-        // Инициализация при загрузке страницы
-document.addEventListener('DOMContentLoaded', () => {
-    new MobileMenu();
+    });
 });

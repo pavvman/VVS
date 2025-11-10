@@ -416,16 +416,16 @@ html{
     clip-path: circle(0% at calc(100% - 40px) 40px);
 }
 
-.menu__overlay {
+.menu_overlay {
     width: 100%;
     height: 100%;
     display: flex;
-    padding: 80px 40px;
+    padding: 0px 33px 0px 33px;
     justify-content: flex-start;
     align-items: flex-start;
 }
 
-.menu__content {
+.menu_content {
     text-align: left;
 	padding-top: 80px;
 }
@@ -447,7 +447,7 @@ html{
 }
 
 .footer_gen_menu_active{
-	padding-top: 163px;
+	padding-top: 290px;
 	
 }
 
@@ -465,6 +465,10 @@ html{
 	background-color: #070fff;
 }
 
+.footer_svg_menu{
+	width: 300px;
+	height: 100px;
+}
 
 /* Активное состояние */
 .mobile-menu.active {
@@ -492,7 +496,6 @@ html{
 .menu-toggle.active .close-text {
     display: inline;
 	color: #ffeeee;
-	 padding: 0px 17px 0px 17px;
 }
 
 
@@ -512,19 +515,6 @@ html{
 
 
 @media (max-width: 480px) {
-    /* .a1_menu_active {
-        font-size: 30px;
-        margin: 10px 0;
-    }
-    
-    .menu-toggle {
-        font-size: 18px;
-        padding: 6px 10px;
-    }
-    
-    .menu__overlay {
-        padding: 60px 20px;
-    } */
 
 	.a1_menu_active{
     display: block;
@@ -540,12 +530,10 @@ html{
 	.a1_menu_active:hover {
     color: #666;
     }
-	.footer_gen_menu_active{
-	padding-top: 163px;
-	}
 
+	
 	.footer_p_menu_active{
-	font-size: 16px;
+	font-size: 15px;
 	color: #eee;
 	padding-top: 13px;
 	margin-left: 50px;
@@ -553,21 +541,12 @@ html{
 	cursor: pointer;
 	}
 	
-	.footer_p_menu_active:hover{
-	background-color: #070fff;
-    }
+
 
 
 }
+/* 
 
-/* Стили для демонстрации */
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 16px 20px;
-    border-bottom: 1px solid #eee;
-}
 
 
 
