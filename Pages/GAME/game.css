@@ -14,16 +14,34 @@ a{
     color: #000000;
 }
 
+
+
 .game_container {
-    max-width: 1455px;
+    max-width: 100%;
     padding: 0px 33px 0px 33px;
-    
+    background-color: hsl(0, 0%, 100%);
+}
+
+html, body {
+   
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    overflow-x: hidden; /* Удаление горизонтальный скролл */
+}
+
+* {
+    box-sizing: border-box; 
 }
 
 
 
 
-/*header*/
+
+
+/*GAME-HEADER*/
+
+
 
 
 .game_header {
@@ -138,7 +156,7 @@ a{
 /*header-button*/
 
 
-.game_a_header_button{
+.game_header_button{
     font-size: 22px;
     font-weight: 400;
     line-height: 0.3%;
@@ -148,17 +166,22 @@ a{
     
 }
 
-.game_a_header_button:hover{
+.game_header_button:hover{
     color: rgb(85, 85, 85);
 }
 
 
 
-/*Game*/
 
-.game_container{
-    
-}
+
+
+
+
+
+
+/*MAIN-GAME*/
+
+
 
 .game{
     width: 100%;
@@ -370,9 +393,201 @@ a{
 
 
 
-
-
 ::selection {
    background-color: rgb(17, 17, 17);
     color:#ffffff;
 }
+
+
+
+
+
+
+
+
+
+
+
+/*Бургер-меню*/
+
+
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 22px;
+    font-weight: 400;
+    color: #000;
+    padding: 8px 12px;
+    z-index: 1000;
+    position: relative;
+    
+}
+
+.close-text {
+    display: none;
+}
+
+
+/* Меню */
+
+
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: #000000;
+    z-index: 999;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.4s ease;
+    clip-path: circle(0% at calc(100% - 40px) 40px);
+}
+
+.menu_overlay {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding: 0px 33px 0px 33px;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.menu_content {
+    text-align: left;
+	padding-top: 80px;
+}
+
+.a1_menu_active{
+    display: block;
+    font-size: 39px;
+    font-weight: 400;
+    color: #ffeeee;
+    text-decoration: none;
+    margin: 15px 0;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.4s ease;
+}
+
+.a1_menu_active:hover {
+    color: #666;
+}
+
+.footer_gen_menu_active{
+	padding-top: 180px;
+	
+}
+
+.footer_svg_menu{
+	width: 300px;
+	height: 100px;
+     padding-top:180px;
+}
+
+/* Активное состояние */
+.mobile-menu.active {
+    opacity: 1;
+    visibility: visible;
+    clip-path: circle(150% at calc(100% - 40px) 40px);
+}
+
+.mobile-menu.active .a1_menu_active{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.mobile-menu.active .a1_menu_active:nth-child(1) { transition-delay: 0.1s; }
+.mobile-menu.active .a1_menu_active:nth-child(2) { transition-delay: 0.15s; }
+.mobile-menu.active .a1_menu_active:nth-child(3) { transition-delay: 0.2s; }
+.mobile-menu.active .a1_menu_active:nth-child(4) { transition-delay: 0.25s; }
+.mobile-menu.active .a1_menu_active:nth-child(5) { transition-delay: 0.3s; }
+
+
+.menu-toggle.active .menu-text {
+    display: none;
+
+}
+
+
+.menu-toggle.active .menu-text {
+    display: none;
+
+}
+
+.menu-toggle.active .close-text {
+    display: inline;
+	color: #ffeeee;
+}
+
+/*для каждой страницы*/
+
+
+#game {
+    color: #000000;
+}
+
+
+
+@media (max-width: 1100px) {
+    .menu-toggle {
+        display: block;
+    }
+    
+    .game_header_search {
+        display: none;
+    }
+
+	.game_header_button{
+		display: none;
+	}
+}
+
+
+@media (max-width: 480px) {
+
+    .menu-toggle{
+        font-size: 18px;
+
+    }
+
+	.a1_menu_active{
+    display: block;
+    font-size: 39px;
+    font-weight: 400;
+    color: #ffeeee;
+    text-decoration: none;
+    margin: 15px 0;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.4s ease;
+   }
+	.a1_menu_active:hover {
+    color: #666;
+    }
+
+	
+	.footer_p_menu_active{
+	font-size: 15px;
+	color: #eee;
+	padding-top: 13px;
+	margin-left: 50px;
+	transition: all 0.3s ease-in;
+	cursor: pointer;
+	}
+	
+
+}
+
+
+
+
+
+
+
+
+/*MEDIA*/

@@ -17,12 +17,6 @@
 }
 
 
-
-
-
-
-
-
 /* Меню */
 
 
@@ -144,7 +138,6 @@
 
 
 
-/**/
 
 @media (max-width: 1100px) {
     .menu-toggle {
@@ -154,10 +147,10 @@
     .header_search {
         display: none;
     }
-
 	.header_button{
 		display: none;
 	}
+  
 }
 
 

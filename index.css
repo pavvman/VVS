@@ -15,15 +15,21 @@ a{
 }
 
 .container {
-    max-width: 1455px;
-    background-color: #ffffff;
+    max-width: 100%;
     padding: 0px 33px 0px 33px;
-    
-    
+    background-color: hsl(0, 0%, 100%);
 }
 
-html{
+html, body {
+   
+    margin: 0;
+    padding: 0;
     scroll-behavior: smooth;
+    overflow-x: hidden; /* Удаление горизонтальный скролл */
+}
+
+* {
+    box-sizing: border-box; 
 }
 
 
@@ -31,9 +37,9 @@ html{
 
 
 
+/*HEADER*/
 
 
-/*header*/
 
 
 .header {
@@ -170,7 +176,10 @@ html{
 
 
 
-/*Main*/
+/*MAIN*/
+
+
+
 
 .gen{
     max-width: 1455px;
@@ -183,6 +192,7 @@ html{
     background-repeat: no-repeat;
     width: 100%;
     height: auto;
+     pointer-events: none;
     object-fit: cover;
     margin-top: -70px;
     max-width: 100%;   
@@ -191,13 +201,20 @@ html{
 }
 
 .h1_general{
-    font-size: 40px;
+    font-size: 70px;
     font-weight: 800;
+    color: rgb(17, 17, 255);
+    transition: all 0.3s ease-in;
+    cursor: pointer;
+    line-height: 1;
 }
 
+.h1_general:hover{
+      filter: blur(5px);
+}
 .p_general{
     color: #000000;
-    width: 78%;
+    width: 74%;
     font-size: 27px;
     font-weight: 400;
     margin-top: 40px;
@@ -319,7 +336,7 @@ html{
 
 
 
-/*Footer*/
+/*FOOTER*/
 
 
 
@@ -391,12 +408,6 @@ html{
 }
 
 
-
-
-
-
-
-
 /* Меню */
 
 
@@ -449,23 +460,10 @@ html{
 	
 }
 
-/* .footer_p_menu_active{
-	font-size: 16px;
-	color: #eee;
-	padding-top: 13px;
-	margin-left: 50px;
-	transition: all 0.3s ease-in;
-	cursor: pointer;
-	
-}
-
-.footer_p_menu_active:hover{
-	background-color: #070fff;
-} */
-
 .footer_svg_menu{
 	width: 300px;
 	height: 100px;
+    padding-top:180px;
 }
 
 /* Активное состояние */
@@ -555,14 +553,7 @@ html{
 
 
 
-
-
-
-
-
-
-
-/*медиа-запросы*/
+/*MEDIA*/
 
 
 
@@ -657,6 +648,16 @@ html{
     height: auto;       
     display: block;
    }
+   
+    .h1_general{
+    font-size: 45px;
+    font-weight: 800;
+    line-height: 1;
+    color: rgb(17, 17, 255);
+    transition: all 0.3s ease-in;
+    cursor: pointer;
+     }
+
     .p_general{
     color: #000000;
     width: 100%;
@@ -676,7 +677,7 @@ html{
     text-decoration: none;
     border:1px #171717 solid;
     border-radius: 13px ;
-    padding:8px 13px;
+    padding:8px 10px;
     transition: all 0.2s ease-in;
 }
     .span-main-button{
@@ -684,7 +685,7 @@ html{
     color: #0f0f0f;
     padding: 3px 5px;
     border-radius: 6px;
-    font-size:11px;
+    font-size:1px;
     transition: all 0.2s ease-in;
 }
     .main_button_a{
@@ -736,6 +737,16 @@ html{
     height: auto;       
     display: block;
    }
+
+     .h1_general{
+    font-size: 35px;
+    font-weight: 800;
+    line-height: 1;
+    color: rgb(17, 17, 255);
+    transition: all 0.3s ease-in;
+    cursor: pointer;
+     }
+
     .p_general{
     color: #000000;
     width: 100%;
@@ -838,6 +849,15 @@ html{
     height: auto;       
     display: block;
    }
+
+   .h1_general{
+    font-size: 30px;
+    font-weight: 800;
+    line-height: 1;
+    color: rgb(17, 17, 255);
+    transition: all 0.3s ease-in;
+    cursor: pointer;
+}
     .p_general{
     color: #000000;
     width: 100%;
